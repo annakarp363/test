@@ -1,0 +1,28 @@
+html
+    head
+        title ""
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0")
+        link(href="assets/css/app.css" rel="stylesheet")
+    body
+        div
+            div
+                img
+                span
+                    p swedavia
+                    p swedish airports
+            form(id="form_id" onsubmit="javascript:return validate('form_id','email');")
+                div
+                    label(for="email") Username
+                    input(type="text" id="email" name="email")
+                div
+                    label(for="password") Password
+                    input(type="password" id="password")
+                    span(id="error_email") Email is not valid
+                span
+                    button(type="submit" value="Submit" id="submit" onClick="javascript:return validate('form_id','email');") Отправить
+                    a Forgot password?
+            div
+                a Powered by
+
+script(src="assets/js/main.js")
